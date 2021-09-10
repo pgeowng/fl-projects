@@ -1,0 +1,154 @@
+/* main */
+.b-main__item {
+  float: left;
+  width: 460px;
+  margin-left: 20px;
+}
+.b-main__item_small {
+  width: 300px;
+  margin-top: 27px;
+}
+.b-main__item_long {
+  width: 940px;
+  margin-top: 20px;
+}
+.b-main__item_first {
+  margin-left: 10px;
+}
+
+/* main head */
+.b-item-head {
+  line-height: 16px;
+  height: 15px;
+  background: url("../img/hbg.png") repeat;
+}
+.b-item-head__img {
+  display: inline-block;
+  background: url("../img/bg.png");
+  padding-right: 2px;
+}
+.b-item-head__text {
+  display: inline-block;
+}
+.b-item-head__text {
+  position: relative;
+  display: inline;
+  font-size: 14px;
+  line-height: 15px;
+  vertical-align: top;
+  color: #7e7e7e;
+  padding: 0 15px 0 3.5px;
+  background: url("../img/bg.png");
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* main item content */
+.b-content__img {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.b-content__text {
+  color: #8f8f8f;
+  font: 12px/16px Tahoma, sans-serif;
+  text-align: justify;
+}
+.b-content__text_quote {
+  font-style: italic;
+}
+.b-content__caption {
+  margin-top: 14.5px;
+  font: 12px Tahoma, sans-serif;
+  color: #525252;
+  font-size: 12px;
+}
+.b-content__caption_small {
+  margin-top: 22.5px;
+}
+
+/* main - company */
+.b-company {
+  width: 100%;
+}
+.b-company__content {
+  margin-top: 15px;
+}
+.b-company__content_teams {
+  margin-top: 20px;
+}
+
+.b-team-member {
+  overflow: auto;
+}
+.b-team-member__img {
+  float: left;
+  margin-right: 10.5px;
+}
+.b-team-member__title {
+  font: 11px/14px Tahoma, sans-serif;
+  color: #525252;
+  text-transform: uppercase;
+  vertical-align: top;
+  margin-top: -2px;
+}
+.b-team-member__text {
+  font: 11px/14px Tahoma, sans-serif;
+  color: #8f8f8f;
+  text-align: justify;
+}
+
+.b-team-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.b-team-list__item {
+  margin-top: 7px;
+}
+
+.b-company-logo {
+  display: block;
+  background: url("../img/companies.png") 0 0;
+  height: 82px;
+}
+.b-company-logo_1 {
+  width: 61px;
+}
+.b-company-logo_2 {
+  background-position: -61px 0;
+  width: 74px;
+}
+.b-company-logo_3 {
+  background-position: -135px 0;
+  width: 163px;
+}
+.b-company-logo_4 {
+  background-position: -298px 0;
+  width: 72px;
+}
+.b-company-logo_5 {
+  background-position: -370px 0;
+  width: 103px;
+}
+.b-company-logo_6 {
+  background-position: -473px 0;
+  width: 76px;
+}
+.b-company-logo_7 {
+  background-position: -549px 0;
+  width: 85px;
+}
+
+.b-allies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.b-allies__company-logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}

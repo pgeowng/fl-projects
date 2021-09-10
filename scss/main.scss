@@ -1,0 +1,174 @@
+/* main */
+.b-main {
+  &__item {
+    float: left;
+    width: 460px;
+
+    margin-left: 20px;
+
+    // margin-bottom: 19px;
+
+    &_small {
+      width: 300px;
+      margin-top: 27px;
+    }
+
+    &_long {
+      width: 940px;
+      margin-top: 20px;
+    }
+
+    &_first {
+      margin-left: 10px;
+    }
+  }
+}
+
+/* main head */
+.b-item-head {
+  line-height: 16px;
+  height: 15px;
+  background: url('../img/hbg.png') repeat;
+
+  &__img {
+    display: inline-block;
+    background: url('../img/bg.png');
+    padding-right: 2px;
+    // padding: 2px;
+  }
+  &__text {
+    display: inline-block;
+  }
+  &__text {
+    position: relative;
+    display: inline;
+    font-size: 14px;
+    line-height: 15px;
+    vertical-align: top;
+    color: #7e7e7e;
+    padding: 0 15px 0 3.5px;
+    background: url('../img/bg.png');
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+}
+
+/* main item content */
+
+.b-content {
+  &__img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  &__text {
+    color: #8f8f8f;
+    font: 12px/16px Tahoma, sans-serif;
+    text-align: justify;
+
+    &_quote {
+      font-style: italic;
+    }
+  }
+
+  &__caption {
+    margin-top: 14.5px;
+    font: 12px Tahoma, sans-serif;
+    color: #525252;
+    font-size: 12px;
+
+    &_small {
+      margin-top: 22.5px;
+    }
+  }
+}
+
+/* main - company */
+.b-company {
+  width: 100%;
+  &__content {
+    margin-top: 15px;
+    // margin-bottom: 20px;
+
+    &_teams {
+      margin-top: 20px;
+    }
+  }
+}
+
+.b-team-member {
+  overflow: auto;
+  &__img {
+    float: left;
+    margin-right: 10.5px;
+  }
+
+  &__title {
+    font: 11px/14px Tahoma, sans-serif;
+    color: #525252;
+    text-transform: uppercase;
+    vertical-align: top;
+    margin-top: -2px;
+  }
+
+  &__text {
+    font: 11px/14px Tahoma, sans-serif;
+    color: #8f8f8f;
+    text-align: justify;
+  }
+}
+
+.b-team-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    margin-top: 7px;
+  }
+}
+
+.b-company-logo {
+  display: block;
+  background: url('../img/companies.png') 0 0;
+  height: 82px;
+
+  &_1 {
+    width: 61px;
+  }
+
+  &_2 {
+    background-position: -61px 0;
+    width: 74px;
+  }
+  &_3 {
+    background-position: -135px 0;
+    width: 163px;
+  }
+
+  &_4 {
+    background-position: -298px 0;
+    width: 72px;
+  }
+  &_5 {
+    background-position: -370px 0;
+    width: 103px;
+  }
+  &_6 {
+    background-position: -473px 0;
+    width: 76px;
+  }
+  &_7 {
+    background-position: -549px 0;
+    width: 85px;
+  }
+}
+
+.b-allies {
+  display: flex;
+  justify-content: space-around;
+
+  &__company-logo {
+    flex: 0 0 auto;
+  }
+}

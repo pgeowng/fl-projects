@@ -1,0 +1,126 @@
+.b-twitter {
+  width: 300px;
+}
+
+.b-twitter__header,
+.b-sitemap__header,
+.b-networks__header {
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  width: 100%;
+  border-bottom: 1px solid #919191;
+  // padding-left: 1.5px;
+  // margin-left: 1.5px;
+  padding-top: 14px;
+  padding-bottom: 4px;
+  vertical-align: top;
+}
+
+.b-twitter__time {
+  font: 11px/14px Tahoma, sans-serif;
+  text-decoration: underline;
+  color: #b4aeae;
+  margin-top: 6px;
+  margin-left: 2px;
+}
+
+.b-twitter__text {
+  font: 11px/14px Tahoma, sans-serif;
+  color: #dbdbdb;
+  text-align: justify;
+  margin-left: 3px;
+  margin-top: 4px;
+  margin-right: 23px;
+}
+
+.b-sitemap {
+  min-width: 150px;
+
+  &__links {
+    float: left;
+    margin-top: 7px;
+    &_right {
+      margin-top: 7px;
+      float: right;
+      margin-right: 22px;
+    }
+  }
+}
+
+.b-networks {
+  max-width: 131px; /* ??? */
+  &__icon {
+    background: url('../img/social.png');
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-top: 11px;
+    margin-right: 10px;
+    box-shadow: 0 1px #0002;
+    &_small {
+      box-shadow: none;
+      width: 16px;
+      height: 16px;
+      margin-right: 7.5px;
+      margin-top: 5px;
+    }
+
+    &_twitter {
+      background-position: 0 0;
+    }
+    &_facebook {
+      background-position: -40px 0;
+    }
+    &_google {
+      background-position: -80px 0;
+    }
+
+    &_vimeo {
+      background-position: 0 -38px;
+    }
+    &_youtube {
+      background-position: -24px -38px;
+    }
+    &_flickr {
+      background-position: -47px -38px;
+    }
+    &_instagram {
+      background-position: -71px -38px;
+    }
+    &_rss {
+      background-position: -94px -38px;
+    }
+  }
+}
+
+.b-footer-logo {
+  float: right;
+  margin-top: 24px;
+  margin-right: 3px;
+
+  &__img {
+    float: right;
+    margin-bottom: 14px;
+  }
+
+  &__copyright {
+    clear: right;
+    font: 10px Tahoma, sans-serif;
+    color: #dbdbdb;
+    margin-right: 2px;
+  }
+}
+
+.b-twitter,
+.b-sitemap,
+.b-networks {
+  float: left;
+  margin-right: 20px;
+}
+
+.b-sitemap {
+  margin-right: 19px;
+}
