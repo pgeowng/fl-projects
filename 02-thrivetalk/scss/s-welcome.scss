@@ -1,15 +1,52 @@
 @use 'vars';
 
 .s-welcome {
+  &__round-rect {
+    display: none;
+    position: absolute;
+    width: 807.71px;
+    height: 544.93px;
+    left: 1139.93px;
+    top: -170.66px;
+    border-radius: 312.159px;
+    transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
+
+    background-color: vars.$accent-pastel-blue;
+  }
   &__img {
     display: none;
+    position: absolute;
+    // width: 971.96px;
+    // height: 875.78px;
+    // left: 697.98px;
+    // top: -52.57px;
+    left: 797px;
+    top: 46px;
+    outline: 1px dashed black;
   }
 
   &__content {
     background-color: vars.$accent-pastel-yellow;
+    padding-top: 240px;
+    margin-right: 323px;
+    padding-left: 179.5px;
+    padding-right: 454px;
+    padding-bottom: 75px;
+    border-bottom: 2px solid #fff;
+  }
+
+  &__logo {
+  }
+
+  &__title {
+    margin-top: 37px;
   }
 
   &__text {
+    margin-top: 84.5px;
+  }
+  &__buttons {
+    margin-top: 54px;
   }
 }
 
@@ -18,9 +55,12 @@
   font-size: vars.$r48;
   margin: 0;
   color: vars.$accent-dark-blue;
+  letter-spacing: -0.035em;
+  line-height: 46px;
 }
 
 .welcome-text {
   font-size: vars.$r24;
   color: vars.$accent-dark-blue;
+  line-height: 46px;
 }

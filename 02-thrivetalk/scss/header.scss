@@ -1,6 +1,13 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   margin: 27px auto 0;
   max-width: 1130px;
+  z-index: 10;
+
+  outline: 1px dashed black;
 
   display: flex;
   justify-content: space-between;

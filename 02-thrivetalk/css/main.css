@@ -56,14 +56,22 @@
   border-radius: 50px;
 }
 .a-link_button_orange {
+  min-width: 150px;
+  padding: 13px 30px;
+  /* idk */
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-size: 1rem;
   color: #fff;
   background-color: #f9b640;
-  padding: 10px 30px;
-  /* idk */
 }
 .a-link_button_orange_inv {
   background-color: transparent;
   color: #f9b640;
+}
+.a-link_button_wider {
+  padding-left: 38px;
+  padding-right: 38px;
 }
 
 h1,

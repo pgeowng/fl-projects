@@ -54,14 +54,24 @@
     }
 
     &_orange {
+      min-width: 150px;
+      padding: 13px 30px; /* idk */
+
+      letter-spacing: 0.1em;
+      font-weight: vars.$bold;
+      font-size: vars.$r16;
       color: #fff;
       background-color: vars.$accent-yellow;
-      padding: 10px 30px; /* idk */
 
       &_inv {
         background-color: transparent;
         color: vars.$accent-yellow;
       }
+    }
+
+    &_wider {
+      padding-left: 38px;
+      padding-right: 38px;
     }
   }
 }
