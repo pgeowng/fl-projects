@@ -1,3 +1,4 @@
+@use 'vars';
 *,
 *::after,
 *::before {
@@ -11,42 +12,29 @@
   margin: 0 auto;
 
   line-height: 1.5;
+  font-family: Larsseit, sans-serif;
 }
 
-$accent-cyan: #62d0df;
-$accent-dark-blue: #22356f;
-
-$r7: 0.4375rem;
-$r14: 0.875rem; // 14px
-
-$r23: 1.4375rem;
-$r24: 1.5rem;
-
-$regular: 400;
-$medium: 500;
-$bold: 700;
-
 .logo {
-  font: $bold $r24 Larsseit, sans-serif;
-  line-height: $r23;
+  font: vars.$bold vars.$r24 Larsseit, sans-serif;
+  line-height: vars.$r23;
   letter-spacing: -0.035em;
 
-  color: $accent-cyan;
+  color: vars.$accent-cyan;
 }
 
 .a-link {
   text-decoration: none;
-
   &_nav-top {
     display: block;
-    color: $accent-dark-blue;
-    font: $r14 Larsseit, sans-serif;
-    font-weight: $regular;
-    padding: $r14 $r7;
+    color: vars.$accent-dark-blue;
+    font: vars.$r14 Larsseit, sans-serif;
+    font-weight: vars.$regular;
+    padding: vars.$r14 vars.$r7;
 
     &_active {
-      font-weight: $medium;
-      border-bottom: 1px solid $accent-dark-blue;
+      font-weight: vars.$medium;
+      border-bottom: 1px solid vars.$accent-dark-blue;
     }
   }
 
@@ -57,12 +45,29 @@ $bold: 700;
     justify-content: center;
 
     &_contact {
-      font: $bold $r14 Larsseit, sans-serif;
+      font: vars.$bold vars.$r14 Larsseit, sans-serif;
 
       color: #fff;
-      background-color: $accent-cyan;
-      padding: 20px 30px;
+      background-color: vars.$accent-cyan;
+      padding: 20px 30px; /* idk */
       border-radius: 50px;
     }
+
+    &_orange {
+      color: #fff;
+      background-color: vars.$accent-yellow;
+      padding: 10px 30px; /* idk */
+
+      &_inv {
+        background-color: transparent;
+        color: vars.$accent-yellow;
+      }
+    }
   }
+}
+
+h1,
+h2,
+p {
+  margin: 0;
 }

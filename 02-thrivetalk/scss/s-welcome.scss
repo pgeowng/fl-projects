@@ -1,0 +1,26 @@
+@use 'vars';
+
+.s-welcome {
+  &__img {
+    display: none;
+  }
+
+  &__content {
+    background-color: vars.$accent-pastel-yellow;
+  }
+
+  &__text {
+  }
+}
+
+.welcome-title {
+  font-weight: vars.$bold;
+  font-size: vars.$r48;
+  margin: 0;
+  color: vars.$accent-dark-blue;
+}
+
+.welcome-text {
+  font-size: vars.$r24;
+  color: vars.$accent-dark-blue;
+}
