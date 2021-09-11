@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.body {
+  max-width: 1440px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.logo {
+  font: 700 1.5rem Larsseit, sans-serif;
+  line-height: 1.4375rem;
+  letter-spacing: -0.035em;
+  color: #62d0df;
+}
+
+.a-link {
+  text-decoration: none;
+}
+.a-link_nav-top {
+  display: block;
+  color: #22356f;
+  font: 0.875rem Larsseit, sans-serif;
+  font-weight: 400;
+  padding: 0.875rem 0.4375rem;
+}
+.a-link_nav-top_active {
+  font-weight: 500;
+  border-bottom: 1px solid #22356f;
+}
+.a-link_button {
+  /* https://moderncss.dev/css-button-styling-guide/ */
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.a-link_button_contact {
+  font: 700 0.875rem Larsseit, sans-serif;
+  color: #fff;
+  background-color: #62d0df;
+  padding: 20px 30px;
+  border-radius: 50px;
+}

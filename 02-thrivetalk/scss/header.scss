@@ -1,0 +1,25 @@
+.header {
+  margin: 27px auto 0;
+  max-width: 1130px;
+
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+  }
+  &__nav {
+    min-width: 233px;
+  }
+  &__contact {
+  }
+}
+
+.nav-top {
+  &__list {
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+  }
+}
