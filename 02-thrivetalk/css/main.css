@@ -6,6 +6,10 @@
   background-color: #c4e769;
 }
 
+.fg_cyan {
+  color: #62d0df;
+}
+
 .bg_cyan {
   background-color: #62d0df;
 }
@@ -99,6 +103,18 @@ h1,
 h2,
 p {
   margin: 0;
+}
+
+.section-header {
+  font-family: Larsseit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  text-transform: uppercase;
+  color: #22356f;
 }
 
 .header {
@@ -213,6 +229,7 @@ p {
 
 .activities {
   margin-top: 481px;
+  margin-bottom: 41px;
   display: block;
 }
 .activities__row {
@@ -325,4 +342,42 @@ p {
   line-height: 27px;
   letter-spacing: -0.03em;
   color: rgba(34, 53, 111, 0.5);
+}
+
+.also-know {
+  display: flex;
+}
+.also-know__img {
+  flex: 0 1 480px;
+}
+.also-know__content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 107px;
+  padding-left: 106px;
+  padding-bottom: 38px;
+}
+.also-know__header {
+  position: relative;
+  left: 0.5px;
+  margin-bottom: 222px;
+}
+.also-know__text {
+  flex-grow: 1;
+  max-width: 676px;
+  position: relative;
+  left: 0.5px;
+  color: #22356f;
+  font-family: Larsseit;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+.also-know__button {
+  align-self: flex-start;
+  position: relative;
+  left: -29.5px;
 }
