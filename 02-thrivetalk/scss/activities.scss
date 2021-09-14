@@ -1,5 +1,6 @@
 @use 'vars';
 .activities {
+  margin-top: 481px;
   display: block;
 
   &__row {
@@ -19,10 +20,21 @@
   &__grid {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 21px;
   }
   &__grid > * {
     flex: 1 0 33.33%;
     min-height: 480px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__cards > * {
+    flex: 1 0 33.33%;
+    min-height: 240px;
   }
 }
 
@@ -89,5 +101,37 @@
     height: 12px;
     margin-top: 15px;
     margin-right: 20.5px;
+  }
+}
+
+.card {
+  padding: 55px 77px 0 105px;
+
+  &__header {
+    position: relative;
+    left: 0.5px;
+    margin-bottom: 27.5px;
+
+    font-family: Larsseit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 35px;
+    /* identical to box height */
+
+    letter-spacing: -0.03em;
+
+    color: #22356f;
+  }
+
+  &__lead {
+    font-family: Larsseit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: -0.03em;
+
+    color: rgba(34, 53, 111, 0.5);
   }
 }
