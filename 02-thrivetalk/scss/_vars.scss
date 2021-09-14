@@ -1,3 +1,36 @@
+$dark-blue: #22356f;
+$pastel-blue: #dee1ff;
+$blue: #0052c1;
+$cyan: #62d0df;
+$purple: #8f00ff;
+$toxic-green: #c4e769;
+$pink: #ffe2de;
+.bg_pink {
+  background-color: $pink;
+}
+
+.bg_toxic-green {
+  background-color: $toxic-green;
+}
+.bg_cyan {
+  background-color: $cyan;
+}
+.bg_blue {
+  background-color: $blue;
+}
+
+.bg_dark-blue {
+  background-color: $dark-blue;
+}
+
+.bg_pastel-blue {
+  background-color: $pastel-blue;
+}
+
+.bg_purple {
+  background-color: $purple;
+}
+
 $accent-cyan: #62d0df;
 $accent-dark-blue: #22356f;
 $accent-pastel-blue: #edfdff;
@@ -9,10 +42,12 @@ $r7: 0.4375rem;
 $r10: 0.625rem;
 $r14: 0.875rem; // 14px
 $r16: 1rem;
+$r20: 1.25rem;
 
 $r23: 1.4375rem;
 $r24: 1.5rem;
 $r30: 1.875rem;
+$r36: 2.25rem;
 $r45: 2.8125rem;
 $r48: 3rem;
 

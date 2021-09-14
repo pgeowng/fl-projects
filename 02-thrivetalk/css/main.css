@@ -1,10 +1,37 @@
+.bg_pink {
+  background-color: #ffe2de;
+}
+
+.bg_toxic-green {
+  background-color: #c4e769;
+}
+
+.bg_cyan {
+  background-color: #62d0df;
+}
+
+.bg_blue {
+  background-color: #0052c1;
+}
+
+.bg_dark-blue {
+  background-color: #22356f;
+}
+
+.bg_pastel-blue {
+  background-color: #dee1ff;
+}
+
+.bg_purple {
+  background-color: #8f00ff;
+}
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .body {
@@ -37,15 +64,9 @@
 }
 .a-link_button {
   /* https://moderncss.dev/css-button-styling-guide/ */
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .a-link_button_contact {
   font: 700 0.875rem Larsseit, sans-serif;
@@ -78,4 +99,194 @@ h1,
 h2,
 p {
   margin: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 27px auto 0;
+  max-width: 1130px;
+  z-index: 10;
+  outline: 1px dashed black;
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav {
+  min-width: 233px;
+}
+.nav-top__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.s-welcome__round-rect {
+  display: none;
+  position: absolute;
+  width: 807.71px;
+  height: 544.93px;
+  left: 1139.93px;
+  top: -170.66px;
+  border-radius: 312.159px;
+  transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
+  background-color: #edfdff;
+}
+.s-welcome__img {
+  display: none;
+  position: absolute;
+  left: 797px;
+  top: 46px;
+  outline: 1px dashed black;
+}
+.s-welcome__content {
+  background-color: #f4f9e2;
+  padding-top: 240px;
+  margin-right: 323px;
+  padding-left: 179.5px;
+  padding-right: 454px;
+  padding-bottom: 75px;
+  border-bottom: 2px solid #fff;
+}
+.s-welcome__title {
+  margin-top: 37px;
+}
+.s-welcome__text {
+  margin-top: 84.5px;
+}
+.s-welcome__buttons {
+  margin-top: 54px;
+}
+
+.welcome-title {
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 0;
+  color: #22356f;
+  letter-spacing: -0.035em;
+  line-height: 46px;
+}
+
+.welcome-text {
+  font-size: 1.5rem;
+  color: #22356f;
+  line-height: 46px;
+}
+
+.s-why {
+  overflow: auto;
+  background-color: #62d0df;
+}
+.s-why__img {
+  float: right;
+  margin-left: 181px;
+}
+.s-why__content {
+  margin-top: 138px;
+  margin-left: 179.25px;
+  margin-bottom: 95px;
+}
+.s-why__text {
+  margin-top: 80px;
+}
+
+.why-img {
+  display: block;
+}
+
+.why-title {
+  color: #fff;
+  font-size: 2.25rem;
+  letter-spacing: -0.006em;
+}
+
+.why-text {
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 29.3px;
+}
+.why-text_bold {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 40px;
+}
+
+.activities {
+  display: block;
+}
+.activities__row {
+  height: 360px;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  margin-bottom: 120px;
+}
+.activities__row > * {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.activities__grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.activities__grid > * {
+  flex: 1 0 33.33%;
+  min-height: 480px;
+}
+
+.tile {
+  position: relative;
+  padding: 71px 52px 0 52px;
+}
+.tile__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.tile_big {
+  padding: 95px 70px 0;
+}
+
+.tile-text {
+  display: flex;
+  z-index: 10;
+  padding-top: 25px;
+  color: #ffffff;
+  border-top: 1px solid white;
+  font-family: Larsseit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: -0.006em;
+  margin-bottom: 20px;
+}
+.tile-text::before {
+  flex: 0 0 auto;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-top: 10px;
+  margin-left: 2px;
+  margin-right: 15px;
+  border-radius: 50%;
+  content: "";
+  background-color: #e9b730;
+}
+
+.tile-text_big {
+  padding-top: 32px;
+  line-height: 38px;
+  word-spacing: 100vw;
+  /* force one word per line */
+}
+.tile-text_big::before {
+  width: 12px;
+  height: 12px;
+  margin-top: 15px;
+  margin-right: 20.5px;
 }

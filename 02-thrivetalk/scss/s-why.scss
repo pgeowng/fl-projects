@@ -1,0 +1,43 @@
+@use 'vars';
+.s-why {
+  overflow: auto;
+  background-color: vars.$accent-cyan;
+
+  &__img {
+    float: right;
+    margin-left: 181px;
+  }
+
+  &__content {
+    margin-top: 138px;
+    margin-left: 179.25px;
+    margin-bottom: 95px;
+  }
+
+  &__title {
+  }
+  &__text {
+    margin-top: 80px;
+  }
+}
+.why-img {
+  display: block;
+}
+
+.why-title {
+  color: #fff;
+  font-size: vars.$r36;
+  letter-spacing: -0.006em;
+}
+
+.why-text {
+  color: #fff;
+  font-size: vars.$r20;
+  line-height: 29.3px;
+
+  &_bold {
+    font-weight: 700;
+    font-size: vars.$r24;
+    line-height: 40px;
+  }
+}

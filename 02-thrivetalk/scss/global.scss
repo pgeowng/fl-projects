@@ -1,0 +1,89 @@
+@use 'vars';
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  line-height: 1.5;
+  font-family: Larsseit, sans-serif;
+}
+
+.logo {
+  font: vars.$bold vars.$r24 Larsseit, sans-serif;
+  line-height: vars.$r23;
+  letter-spacing: -0.035em;
+
+  color: vars.$accent-cyan;
+}
+
+.a-link {
+  text-decoration: none;
+  &_nav-top {
+    display: block;
+    color: vars.$accent-dark-blue;
+    font: vars.$r14 Larsseit, sans-serif;
+    font-weight: vars.$regular;
+    padding: vars.$r14 vars.$r7;
+
+    &_active {
+      font-weight: vars.$medium;
+      border-bottom: 1px solid vars.$accent-dark-blue;
+    }
+  }
+
+  &_button {
+    /* https://moderncss.dev/css-button-styling-guide/ */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &_contact {
+      font: vars.$bold vars.$r14 Larsseit, sans-serif;
+
+      color: #fff;
+      background-color: vars.$accent-cyan;
+      padding: 20px 30px; /* idk */
+      border-radius: 50px;
+    }
+
+    &_orange {
+      min-width: 150px;
+      padding: 13px 30px; /* idk */
+
+      letter-spacing: 0.1em;
+      font-weight: vars.$bold;
+      font-size: vars.$r16;
+      color: #fff;
+      background-color: vars.$accent-yellow;
+
+      &_inv {
+        background-color: transparent;
+        color: vars.$accent-yellow;
+      }
+    }
+
+    &_wider {
+      padding-left: 38px;
+      padding-right: 38px;
+    }
+  }
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+// .header,
+// .s-welcome,
+// .s-why {
+//   display: none;
+// }
