@@ -154,7 +154,7 @@ p {
   border-bottom: 1px solid #22356f;
 }
 
-.s-welcome__round-rect {
+.welcome__round-rect {
   position: absolute;
   width: 807.71px;
   height: 544.93px;
@@ -164,12 +164,12 @@ p {
   transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
   background-color: #edfdff;
 }
-.s-welcome__img {
+.welcome__img {
   position: absolute;
   right: -131px;
   top: 46px;
 }
-.s-welcome__content {
+.welcome__content {
   background-color: #f4f9e2;
   padding-top: 240px;
   margin-right: 323px;
@@ -178,16 +178,15 @@ p {
   padding-bottom: 75px;
   border-bottom: 2px solid #fff;
 }
-.s-welcome__title {
-  margin-top: 37px;
+.welcome__logo {
+  margin-bottom: 37px;
 }
-.s-welcome__text {
-  margin-top: 84.5px;
+.welcome__title {
+  margin-bottom: 84.5px;
 }
-.s-welcome__buttons {
-  margin-top: 54px;
+.welcome__text {
+  margin-bottom: 54px;
 }
-
 .welcome-title {
   font-weight: 700;
   font-size: 3rem;

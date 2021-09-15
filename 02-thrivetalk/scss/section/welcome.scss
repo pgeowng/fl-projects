@@ -1,6 +1,6 @@
 @use 'vars';
 
-.s-welcome {
+.welcome {
   &__round-rect {
     // display: none;
     position: absolute;
@@ -31,17 +31,17 @@
   }
 
   &__logo {
+    margin-bottom: 37px;
   }
 
   &__title {
-    margin-top: 37px;
+    margin-bottom: 84.5px;
   }
 
   &__text {
-    margin-top: 84.5px;
+    margin-bottom: 54px;
   }
   &__buttons {
-    margin-top: 54px;
   }
 }
 
