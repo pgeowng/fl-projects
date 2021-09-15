@@ -161,6 +161,23 @@ p {
 .welcome {
   position: relative;
 }
+.welcome__decor {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@media (max-width: 1200px) {
+  .welcome__decor {
+    right: -110px;
+  }
+}
+@media (max-width: 992px) {
+  .welcome__decor {
+    top: 0;
+    display: none;
+    transform: scale(0.75);
+  }
+}
 .welcome__decor::before {
   position: absolute;
   display: block;
@@ -181,7 +198,6 @@ p {
 }
 .welcome__content {
   background-color: #f4f9e2;
-  width: 77.57%;
   padding-top: 240px;
   margin-right: 323px;
   padding-left: 179.5px;
@@ -192,11 +208,22 @@ p {
 @media (max-width: 1400px) {
   .welcome__content {
     padding-left: 85px;
+    padding-right: 394px;
   }
 }
 @media (max-width: 1200px) {
   .welcome__content {
     padding-left: 42px;
+    padding-right: 344px;
+  }
+}
+@media (max-width: 992px) {
+  .welcome__content {
+    top: 1000px;
+    margin-right: 100px;
+    padding-right: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 .welcome__logo {

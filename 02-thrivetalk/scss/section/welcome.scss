@@ -5,6 +5,22 @@
   // overflow-x: hidden;
   // overflow-y: auto;
   &__decor {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    @include vars.media-down(xl) {
+      right: -110px;
+    }
+
+    @include vars.media-down(lg) {
+      // top: 800px;
+      top: 0;
+      display: none;
+      // padding-left: 42px;
+      // padding-right: 344px;
+      transform: scale(0.75);
+    }
     &::before {
       position: absolute;
       display: block;
@@ -31,7 +47,7 @@
   &__content {
     background-color: vars.$accent-pastel-yellow;
 
-    width: 77.57%;
+    // width: 77.57%;/* */
     padding-top: 240px;
     margin-right: 323px;
     padding-left: 179.5px;
@@ -41,10 +57,21 @@
 
     @include vars.media-down(xxl) {
       padding-left: 85px;
+      padding-right: 394px;
     }
 
     @include vars.media-down(xl) {
       padding-left: 42px;
+      padding-right: 344px;
+    }
+
+    @include vars.media-down(lg) {
+      top: 1000px;
+      // padding-left: 42px;
+      margin-right: 100px;
+      padding-right: 100px;
+      padding-top: 200px;
+      padding-bottom: 200px;
     }
   }
 
