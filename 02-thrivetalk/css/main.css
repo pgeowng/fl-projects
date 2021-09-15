@@ -39,12 +39,16 @@
   box-sizing: border-box;
 }
 
-.body {
+body {
+  line-height: 1.5;
+  font-family: Larsseit, sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
-  line-height: 1.5;
-  font-family: Larsseit, sans-serif;
 }
 
 .logo {
@@ -154,29 +158,46 @@ p {
   border-bottom: 1px solid #22356f;
 }
 
-.welcome__round-rect {
+.welcome {
+  position: relative;
+}
+.welcome__decor::before {
   position: absolute;
-  width: 807.71px;
-  height: 544.93px;
+  display: block;
   top: 40px;
   right: -140px;
+  content: "";
+  width: 807.71px;
+  height: 544.93px;
   border-radius: 312.159px;
   transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
   background-color: #edfdff;
 }
-.welcome__img {
+.welcome__decor-img {
   position: absolute;
+  display: block;
   right: -131px;
   top: 46px;
 }
 .welcome__content {
   background-color: #f4f9e2;
+  width: 77.57%;
   padding-top: 240px;
   margin-right: 323px;
   padding-left: 179.5px;
   padding-right: 454px;
   padding-bottom: 75px;
   border-bottom: 2px solid #fff;
+}
+@media (max-width: 1400px) {
+  .welcome__content {
+    padding-left: 85px;
+  }
+}
+@media (max-width: 1200px) {
+  .welcome__content {
+    padding-left: 42px;
+  }
 }
 .welcome__logo {
   margin-bottom: 37px;
@@ -189,7 +210,7 @@ p {
 }
 .welcome-title {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 48px;
   margin: 0;
   color: #22356f;
   letter-spacing: -0.035em;

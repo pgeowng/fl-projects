@@ -57,3 +57,28 @@ $r48: 3rem;
 $regular: 400;
 $medium: 500;
 $bold: 700;
+
+$screen-width-unit-less: 1440; // because right side of calc( a / b ) must be number
+
+@function lerp($max, $min) {
+  $diff: $max - $min;
+  $mm: $screen-width-unit-less - 320;
+  $result: calc(#{$min + px} + calc(#{$diff} * calc((100vw - 320px) / #{$mm})));
+  @return $result;
+}
+
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+@mixin media-down($name, $bp: $breakpoints) {
+  $max: map-get($bp, $name);
+  @media (max-width: $max) {
+    @content;
+  }
+}

@@ -7,13 +7,18 @@
   box-sizing: border-box;
 }
 
-.body {
+body {
+  line-height: 1.5;
+  font-family: Larsseit, sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
 
-  line-height: 1.5;
-  font-family: Larsseit, sans-serif;
+  // overflow: visible;
 }
 
 .logo {
