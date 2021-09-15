@@ -25,6 +25,9 @@
 
 .a-link {
   text-decoration: none;
+  &_yellow {
+    color: #006dff;
+  }
   &_nav-top {
     display: block;
     color: vars.$accent-dark-blue;
