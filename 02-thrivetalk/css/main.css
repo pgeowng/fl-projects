@@ -204,7 +204,6 @@ p {
 .s-why__content {
   margin-top: 138px;
   margin-left: 179.25px;
-  margin-bottom: 95px;
 }
 .s-why__text {
   margin-top: 80px;
@@ -223,12 +222,13 @@ p {
 .why-text {
   color: #fff;
   font-size: 1.25rem;
-  line-height: 29.3px;
+  line-height: 32px;
 }
 .why-text_bold {
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 40px;
+  margin-right: 5px;
 }
 
 .activities {

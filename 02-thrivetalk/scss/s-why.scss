@@ -11,7 +11,7 @@
   &__content {
     margin-top: 138px;
     margin-left: 179.25px;
-    margin-bottom: 95px;
+    // margin-bottom: 87px;
   }
 
   &__title {
@@ -33,11 +33,12 @@
 .why-text {
   color: #fff;
   font-size: vars.$r20;
-  line-height: 29.3px;
+  line-height: 32px;
 
   &_bold {
     font-weight: 700;
     font-size: vars.$r24;
     line-height: 40px;
+    margin-right: 5px;
   }
 }
