@@ -1,0 +1,54 @@
+.contact {
+  display: flex;
+
+  background-color: #22356f;
+  &__img {
+    order: 1000;
+  }
+
+  &__content {
+    flex-grow: 1;
+    padding: 107px 0 0 180px;
+  }
+
+  &__header {
+    color: white;
+    position: relative;
+    left: 0px;
+    margin-bottom: 229px;
+  }
+
+  &__title {
+    position: relative;
+    left: 0.5px;
+    margin-bottom: 52px;
+
+    font-family: Larsseit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: -0.01em;
+
+    color: #ffffff;
+  }
+
+  &__text {
+    max-width: 579px;
+    margin-bottom: 57px;
+    color: #ffffff;
+    font-family: Larsseit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 58px;
+    letter-spacing: -0.005em;
+  }
+  &__button {
+    align-self: flex-start;
+    position: relative;
+    left: -29.5px;
+
+    color: #62d0df;
+  }
+}
