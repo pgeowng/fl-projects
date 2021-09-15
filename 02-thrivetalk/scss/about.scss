@@ -1,0 +1,53 @@
+.about {
+  position: relative;
+  min-height: 481px;
+  // display: flex;
+  // flex-wrap: wrap;
+
+  padding-top: 145px;
+  // padding-left: 106px;
+
+  &__header {
+    position: absolute;
+    left: 106.5px;
+    top: 156px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 93px;
+    &-text {
+      max-width: 592px;
+      position: relative;
+      // left: -0.5px;
+      // : -0.5px;
+      font-family: Larsseit;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.005em;
+
+      color: #22356f;
+    }
+  }
+
+  &__footer {
+    // width: 100%;
+    // flex: 0 1 auto;
+    padding: 24px 0;
+
+    &-text {
+      font-family: Larsseit;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 0.06em;
+
+      color: rgba(34, 53, 111, 0.5);
+    }
+  }
+}

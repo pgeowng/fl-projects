@@ -232,7 +232,6 @@ p {
 }
 
 .activities {
-  margin-top: 481px;
   margin-bottom: 41px;
   display: block;
 }
@@ -498,4 +497,44 @@ p {
 }
 .footer__year {
   margin-left: 3px;
+}
+
+.about {
+  position: relative;
+  min-height: 481px;
+  padding-top: 145px;
+}
+.about__header {
+  position: absolute;
+  left: 106.5px;
+  top: 156px;
+}
+.about__content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 93px;
+}
+.about__content-text {
+  max-width: 592px;
+  position: relative;
+  font-family: Larsseit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.005em;
+  color: #22356f;
+}
+.about__footer {
+  padding: 24px 0;
+}
+.about__footer-text {
+  font-family: Larsseit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: rgba(34, 53, 111, 0.5);
 }
