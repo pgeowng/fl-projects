@@ -1,32 +1,61 @@
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  margin: 27px auto 0;
-  max-width: 1130px;
+  padding-right: 131px;
+  padding-left: 179.5px;
+  margin: 26px auto 0;
+  // max-width: 1130px;
   z-index: 10;
-
-  outline: 1px dashed black;
 
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
   &__logo {
   }
   &__nav {
-    min-width: 233px;
+    // min-width: 240px;
   }
-  &__contact {
+  &__button {
+    position: relative;
+    top: 1px;
+    font: bold 14px Larsseit, sans-serif;
+
+    color: #fff;
+    background-color: #62d0df;
+    min-height: 50px;
+    min-width: 150px;
+    // padding: 20px 30px; /* idk */
+    border-radius: 50px;
   }
 }
 
 .nav-top {
+  padding-left: 7px;
   &__list {
     list-style: none;
 
     display: flex;
     justify-content: space-between;
   }
+
   &__item {
+    margin-right: 14px;
+    &_last {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    display: block;
+    color: #22356f;
+    font: 14px Larsseit, sans-serif;
+    font-weight: 400;
+    padding: 10px 6px 14px;
+    line-height: 16.68px;
+    &_active {
+      font-weight: 500;
+      border-bottom: 1px solid #22356f;
+    }
   }
 }

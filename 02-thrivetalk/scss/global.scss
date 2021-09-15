@@ -8,6 +8,7 @@
 }
 
 .body {
+  position: relative;
   max-width: 1440px;
   margin: 0 auto;
 
@@ -28,33 +29,12 @@
   &_yellow {
     color: #006dff;
   }
-  &_nav-top {
-    display: block;
-    color: vars.$accent-dark-blue;
-    font: vars.$r14 Larsseit, sans-serif;
-    font-weight: vars.$regular;
-    padding: vars.$r14 vars.$r7;
-
-    &_active {
-      font-weight: vars.$medium;
-      border-bottom: 1px solid vars.$accent-dark-blue;
-    }
-  }
 
   &_button {
     /* https://moderncss.dev/css-button-styling-guide/ */
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
-    &_contact {
-      font: vars.$bold vars.$r14 Larsseit, sans-serif;
-
-      color: #fff;
-      background-color: vars.$accent-cyan;
-      padding: 20px 30px; /* idk */
-      border-radius: 50px;
-    }
 
     &_orange {
       min-width: 150px;
