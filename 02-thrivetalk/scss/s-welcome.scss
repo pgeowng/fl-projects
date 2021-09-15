@@ -2,27 +2,22 @@
 
 .s-welcome {
   &__round-rect {
-    display: none;
+    // display: none;
     position: absolute;
     width: 807.71px;
     height: 544.93px;
-    left: 1139.93px;
-    top: -170.66px;
+    top: 40px;
+    right: -140px;
     border-radius: 312.159px;
     transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
 
     background-color: vars.$accent-pastel-blue;
   }
   &__img {
-    display: none;
+    // display: none;
     position: absolute;
-    // width: 971.96px;
-    // height: 875.78px;
-    // left: 697.98px;
-    // top: -52.57px;
-    left: 797px;
+    right: -131px;
     top: 46px;
-    outline: 1px dashed black;
   }
 
   &__content {

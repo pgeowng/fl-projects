@@ -155,22 +155,19 @@ p {
 }
 
 .s-welcome__round-rect {
-  display: none;
   position: absolute;
   width: 807.71px;
   height: 544.93px;
-  left: 1139.93px;
-  top: -170.66px;
+  top: 40px;
+  right: -140px;
   border-radius: 312.159px;
   transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
   background-color: #edfdff;
 }
 .s-welcome__img {
-  display: none;
   position: absolute;
-  left: 797px;
+  right: -131px;
   top: 46px;
-  outline: 1px dashed black;
 }
 .s-welcome__content {
   background-color: #f4f9e2;
