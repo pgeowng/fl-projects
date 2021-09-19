@@ -84,7 +84,7 @@ $scale: math.div($mobile-width, $screen-width-unit-less);
 }
 
 $breakpoints: (
-  xs: 0,
+  xs: 320px,
   sm: 576px,
   md: 768px,
   lg: 992px,
@@ -95,13 +95,6 @@ $breakpoints: (
 @mixin media-down($name, $bp: $breakpoints) {
   $max: map-get($bp, $name);
   @media (max-width: $max) {
-    @content;
-  }
-}
-
-@mixin media-up($name, $bp: $breakpoints) {
-  $max: map-get($bp, $name);
-  @media (min-width: $max) {
     @content;
   }
 }
