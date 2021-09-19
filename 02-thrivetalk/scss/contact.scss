@@ -1,14 +1,43 @@
+@use 'vars';
 .contact {
   display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  @include vars.media-up(sm) {
+    flex-wrap: initial;
+  }
 
   background-color: #22356f;
   &__img {
     order: 1000;
+    flex: 0 1 33.33%;
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    // height: 100%;
+
+    @include vars.media-up(xs) {
+      flex-basis: 100%;
+      display: none;
+    }
+    @include vars.media-up(sm) {
+      display: initial;
+      flex: 0 1 33.33%;
+    }
   }
 
   &__content {
     flex-grow: 1;
-    padding: 107px 0 0 180px;
+    padding: 107px 0 38px 180px;
+    @include vars.media-up(xs) {
+      padding: 107px * 0.4 16px 38px 180px * 0.2;
+    }
+    // @include vars.media-down(xxl) {
+    //   padding-left: 90px;
+    // }
+    // @include vars.media-down(xl) {
+    //   padding-left: 60px;
+    // }
   }
 
   &__header {
@@ -16,6 +45,17 @@
     position: relative;
     left: 0px;
     margin-bottom: 229px;
+
+    @include vars.media-up(xs) {
+      margin-bottom: 229px * 0.4;
+    }
+    // @include vars.media-down(xl) {
+    //   margin-bottom: 160px;
+    // }
+
+    // @include vars.media-down(lg) {
+    //   margin-bottom: 90px;
+    // }
   }
 
   &__title {
@@ -31,6 +71,17 @@
     letter-spacing: -0.01em;
 
     color: #ffffff;
+    @include vars.media-up(xs) {
+      font-size: 64px * 0.7;
+      line-height: 80px * 0.7;
+      margin-bottom: 52px * 0.7;
+    }
+    // @include vars.media-down(xl) {
+    //   margin-bottom: 26px;
+    // }
+    // @include vars.media-down(xl) {
+    //   font-size: 54px;
+    // }
   }
 
   &__text {
@@ -43,6 +94,15 @@
     font-size: 36px;
     line-height: 58px;
     letter-spacing: -0.005em;
+
+    @include vars.media-up(xs) {
+      font-size: 36px * 0.7;
+      line-height: 58px * 0.7;
+      margin-bottom: 57px * 0.7;
+    }
+    // @include vars.media-down(xl) {
+    //   font-size: 36px * 0.7;
+    // }
   }
   &__button {
     align-self: flex-start;

@@ -1,3 +1,4 @@
+@use 'sass:math';
 $dark-blue: #22356f;
 $pastel-blue: #dee1ff;
 $blue: #0052c1;
@@ -59,11 +60,26 @@ $medium: 500;
 $bold: 700;
 
 $screen-width-unit-less: 1440; // because right side of calc( a / b ) must be number
+$mobile-width: 320;
+$scale: math.div($mobile-width, $screen-width-unit-less);
 
 @function lerp($max, $min) {
   $diff: $max - $min;
   $mm: $screen-width-unit-less - 320;
   $result: calc(#{$min + px} + calc(#{$diff} * calc((100vw - 320px) / #{$mm})));
+  @return $result;
+}
+
+@function lerpd($max) {
+  $result:
+  // /*calc(
+    calc(100vw / #{$screen-width-unit-less} * #{$max});
+  // * #{math.div(
+  //     $max,
+  //     $screen-width-unit-less
+  //   )}
+  // );
+
   @return $result;
 }
 
@@ -79,6 +95,13 @@ $breakpoints: (
 @mixin media-down($name, $bp: $breakpoints) {
   $max: map-get($bp, $name);
   @media (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin media-up($name, $bp: $breakpoints) {
+  $max: map-get($bp, $name);
+  @media (min-width: $max) {
     @content;
   }
 }

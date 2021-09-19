@@ -46,14 +46,14 @@ body {
       padding: 13px 30px; /* idk */
 
       letter-spacing: 0.1em;
-      font-weight: vars.$bold;
-      font-size: vars.$r16;
+      font-weight: 700;
+      font-size: 16px;
       color: #fff;
-      background-color: vars.$accent-yellow;
+      background-color: #f9b640;
 
       &_inv {
         background-color: transparent;
-        color: vars.$accent-yellow;
+        color: #f9b640;
       }
     }
 
