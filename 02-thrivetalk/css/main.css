@@ -342,10 +342,14 @@ p {
 
 .footer {
   display: flex;
-  flex-wrap: wrap;
+}
+.footer__img {
+  flex: 0 1 0;
+  object-fit: cover;
 }
 .footer__content {
   flex-grow: 1;
+  flex-shrink: 0;
   display: flex;
   padding-top: 103px;
   padding-left: 68.5px;
@@ -396,6 +400,7 @@ p {
   line-height: 9px;
   letter-spacing: -0.006em;
   color: #ffffff;
+  display: none;
 }
 .footer__legal::before {
   content: "©";

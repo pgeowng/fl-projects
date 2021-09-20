@@ -1,9 +1,19 @@
 .footer {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
+
+  &__img {
+    // width: 570px;
+    // height: 100%;
+    flex: 0 1 0;
+    object-fit: cover;
+  }
 
   &__content {
     flex-grow: 1;
+    flex-shrink: 0;
+    // width: 870px;
+
     display: flex;
     padding-top: 103px;
     padding-left: 68.5px;
@@ -63,6 +73,7 @@
     letter-spacing: -0.006em;
 
     color: #ffffff;
+    display:none;
 
     &::before {
       content: '\000A9';
