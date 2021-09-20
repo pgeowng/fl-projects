@@ -1,0 +1,21 @@
+.stat {
+  background-color: #f5f5f7;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stat__number {
+  font: 64px "Baloo Bhai", Arial, sans-serif;
+}
+.stat__label {
+  font: normal 400 16px/1.5 "Roboto", Arial, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

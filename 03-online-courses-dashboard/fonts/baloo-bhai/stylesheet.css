@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Baloo Bhai';
+    src: url('BalooBhai-Regular.eot');
+    src: local('Baloo Bhai Regular'), local('BalooBhai-Regular'),
+        url('BalooBhai-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BalooBhai-Regular.woff2') format('woff2'),
+        url('BalooBhai-Regular.woff') format('woff'),
+        url('BalooBhai-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
