@@ -1,0 +1,421 @@
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+a { text-decoration: none; color: inherit; }
+ul, ol { list-style: none; }
+img { vertical-align: top; }
+h1, h2, h3, h4, h5, h6 { font-weight: inherit; font-size: inherit; }
+
+html, body {
+  height: 100%;
+  font: 500 14px/1 Montserrat, sans-serif;
+  color: #000;
+  color: #252842;
+  background-color: #fafafa;
+}
+
+
+
+// wrap ------------------------------------
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+// helpers ------------------------------------
+
+._container {
+  box-sizing: content-box;
+  margin: 0 auto;
+  max-width: 1050px;
+  padding: 0 15px;
+}
+
+._ibg {
+  position: relative;
+
+  & img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
+
+
+// header ------------------------------------
+
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+
+  &__container {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+
+    @media (max-width: 479px) {
+      min-height: 70px;
+    }
+  }
+
+  &__logo {
+    margin: 0 133px 0 0;
+
+    @media (max-width: 992px) {
+      margin: 0 80px 0 0;
+    }
+
+    @media (max-width: 767px) {
+      margin: 0 40px 0 0;
+    }
+
+    @media (max-width: 479px) {
+      margin: 0 30px 0 0;
+    }
+  }
+
+  &__menu {}
+
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3333;
+  letter-spacing: 0.1px;
+
+}
+
+.menu {
+  padding: 5px 0;
+
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+  }
+
+  &__item:not(:last-child) {
+    margin: 0 21px 0 0;
+
+    @media (max-width: 479px) {
+        margin: 0 30px 0 0;
+    }
+  }
+
+  &__link {
+    font-weight: 600;
+    line-height: 1.714;
+    letter-spacing: 0.2px;
+    color: #737373;
+
+    @media (max-width: 479px) {
+      font-size: 18px;
+    }
+  }
+}
+
+
+
+// footer ----------------------------
+.footer {
+
+}
+// page ------------------------------
+
+.page {
+  flex: 1 1 auto;
+
+  &__main-block {
+  }
+  &__services {
+    margin-top: -111px;
+    position: relative;
+    z-index: 20;
+
+  }
+
+  &__exp {
+
+  }
+}
+
+
+// main-block ----------------------------
+
+.main-block {
+  position: relative;
+
+  &__cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    & > img {
+      @media (max-width: 1400px) {
+        object-position: right;
+      }
+      @media (max-width: 992px) {
+        opacity: 0.4;
+      }
+    }
+  }
+
+  &__container {}
+
+  &__body {
+    padding: 184px 0 191px 0;
+    position: relative;
+    z-index: 10;
+    max-width: 400px;
+
+    & > *:not(:last-child) {
+      margin-bottom: 35px;
+    }
+    @media (max-width: 992px) {
+      padding-top: 120px;
+    }
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 1.379;
+    letter-spacing: 0.2px;
+
+    @media (max-width: 479px) {
+      font-size: 42px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    color: #737373;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content:center;
+
+    margin-top: 10px;
+    padding: 5px 36px;
+
+    font-size: inherit;
+    font-weight: 700;
+    line-height: 1.5; // 2
+    min-height: 48px;
+
+    border-radius: 37px;
+    text-align: center;
+
+    &_orange {
+      background: #ff7b47;
+      color: #fff;
+    }
+
+    &_border {
+      background: transparent;
+      border: 1px solid #0d5c63;
+      color: #0d5c63;
+    }
+
+
+    @media (max-width: 479px) {
+      flex: 1 1 100%;
+    }
+    @media (min-width: 480px) {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+
+// services ----------------------------
+
+.services {
+
+  &__container {
+  }
+
+  &__body {
+    margin: 0 -15px 0;
+    @media (min-width: 670px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__column {
+    flex: 1 0 0;
+    padding: 0 15px;
+
+
+
+    @media (max-width: 992px) {
+      flex: 0 1 50%;
+
+      &:not(:last-child) {
+        margin: 0 0 30px 0;
+      }
+
+      &:last-child {
+        flex: 1 1 100%;
+      }
+    }
+  }
+
+  &__item {}
+}
+
+.service {
+  height: 100%;
+  display: block;
+  padding: 35px 40px;
+
+  color: inherit;
+  background: #fff;
+  box-shadow: 0 13px 19px rgba(0,0,0,0.07);
+
+  & > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &__image{
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+      }
+  &__title {
+    font-size: 24px;
+    line-height: 1.333;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+  }
+  &__text {
+    line-height: 1.428;
+    color: #737373;
+    letter-spacing: 0.2px;
+  }
+
+  &_green {
+    background: #0d5c63;
+    color: #fff;
+
+    & .service__text {
+      color: inherit;
+    }
+
+  }
+}
+
+// section header ------------------------
+
+.section-header {
+  text-align: center;
+
+  & > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &__title {
+
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+
+  }
+
+  &__text {
+    margin: 0 auto;
+    max-width: 511px;
+
+    letter-spacing: 0.2px;
+    line-height: 143%;
+
+    color: #737373;
+  }
+}
+
+// experience ----------------------------
+
+.exp {
+
+
+  &__container {}
+
+  &__body {
+    padding: 80px 0;
+  }
+  &__header {
+    margin-bottom: 50px;
+  }
+  &__stats {}
+}
+
+.stats {
+  display: flex;
+  &__column {
+    flex: 1 0 0;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__item {}
+}
+
+.stat {
+  padding: 30px 30px;
+  height: 100%;
+
+  background: #fff;
+
+  text-align: center;
+
+  & > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+
+    object-fit: contain;
+  }
+  &__number {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+  }
+  &__text {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #737373;
+    letter-spacing: 0.1px;
+  }
+}
