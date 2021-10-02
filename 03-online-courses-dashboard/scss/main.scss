@@ -8,3 +8,14 @@
   margin: 0;
   padding: 0;
 }
+
+
+:root {
+  --bg: #F5F5F7;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  // background-color: var(--bg);
+}

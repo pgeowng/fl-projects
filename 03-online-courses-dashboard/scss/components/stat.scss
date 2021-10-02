@@ -5,10 +5,18 @@
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:center;
+  max-width: 208px;
+  min-height: 98px;
+
+  padding-top: 18px;
+  // padding-left: 35.5px;
+  // padding-bottom: 16px;
 
   &__number {
     @include typography.big-number;
+    margin-right: 11px;
+
   }
 
   &__label {
