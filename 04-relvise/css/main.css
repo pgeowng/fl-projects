@@ -239,9 +239,13 @@ html, body {
   margin-bottom: 50px; }
 
 .stats {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
   .stats__column {
     flex: 1 0 0; }
+    @media (max-width: 767px) {
+      .stats__column {
+        flex: 1 0 50%; } }
     .stats__column:not(:last-child) {
       margin-right: 30px; }
 

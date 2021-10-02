@@ -377,8 +377,14 @@ html, body {
 
 .stats {
   display: flex;
+  flex-wrap: wrap;
+
   &__column {
     flex: 1 0 0;
+
+    @media(max-width: 767px) {
+      flex: 1 0 50%;
+    }
 
     &:not(:last-child) {
       margin-right: 30px;
