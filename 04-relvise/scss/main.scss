@@ -66,6 +66,11 @@ body {
   }
 }
 
+._flexw {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 // section header ------------------------
 
 .section-header {
@@ -193,6 +198,9 @@ body {
   }
 
   &__exp {
+  }
+  &__whoweare {
+    background-color: #fff;
   }
 }
 
@@ -455,5 +463,259 @@ body {
     line-height: 150%;
     color: #737373;
     letter-spacing: 0.1px;
+  }
+}
+
+// practice -------------------------
+
+.practice {
+  &__container {
+  }
+  &__body {
+    padding: 80px 0;
+
+    @media (max-width: 992px) {
+      padding: 50px 0;
+    }
+
+    @media (max-width: 767px) {
+      padding: 40px 0;
+    }
+  }
+  &__header {
+    margin-bottom: 45px;
+  }
+  &__content {
+  }
+}
+
+.cards {
+  // display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px -40px;
+
+  @media (min-width: 576px) {
+    display: flex;
+  }
+
+  &__column {
+    flex: 1 0 0;
+    padding: 0 20px 40px;
+
+    @media (max-width: 1040px) {
+      flex: 1 0 50%;
+    }
+
+    // @media (max-width: 576px) {
+    //   flex: 1 0 100%;
+    // }
+  }
+
+  &__item {
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  background: #fff;
+
+  &__content {
+    padding: 30px;
+    flex: 1 0 0;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__title-link {
+    display: inline-block;
+    line-height: inherit;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__text {
+    line-height: 143%;
+    letter-spacing: 0.2px;
+
+    color: #737373;
+  }
+
+  &__image-link {
+    padding: 0 0 60% 0;
+  }
+  &__image {
+  }
+}
+
+// whoweare --------------------------
+
+.whoweare {
+  padding: 100px 0 100px 0;
+
+  @media (max-width: 950px) {
+    padding: 40px 0;
+  }
+
+  &__container {
+  }
+  &__header {
+    margin-bottom: 100px;
+    @media (max-width: 950px) {
+      margin-bottom: 40px;
+    }
+  }
+  &__body {
+    display: flex;
+    align-items: flex-start;
+
+    @media (max-width: 950px) {
+      flex-direction: column-reverse;
+      align-items: stretch;
+    }
+  }
+  &__video {
+    position: relative;
+
+    flex: 0 0 57%;
+    padding: 0 0 42.25% 0;
+    @media (max-width: 950px) {
+      padding: 0 0 56.25%;
+    }
+
+    & iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+
+      object-fit: cover;
+    }
+  }
+  &__content {
+    flex: 1 1 auto;
+    padding: 20px 0 0 120px;
+
+    @media (max-width: 1080px) {
+      padding: 20px 0 0 40px;
+    }
+
+    @media (max-width: 950px) {
+      padding: 0 0 40px 0;
+    }
+  }
+
+  &__top:not(:last-child) {
+    margin: 0 0 50px 0;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+
+    @media (max-width: 950px) {
+      font-size: 24px;
+    }
+
+    &:not(:last-child) {
+      margin: 0 0 10px 0;
+    }
+  }
+  &__text {
+    line-height: 142%;
+    letter-spacing: 0.2px;
+
+    color: #737373;
+
+    &:not(:last-child) {
+      margin: 0 0 50px 0;
+    }
+  }
+  &__list {
+  }
+  &__item {
+  }
+}
+
+.prop {
+  display: flex;
+
+  &:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
+
+  &__icon {
+    flex: 0 0 32px;
+    margin: 0 20px 0 0;
+
+    object-fit: contain;
+  }
+  &__body {
+    flex: 1 1 0;
+    // overflow: hidden;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+
+    &:not(:last-child) {
+      margin: 0 0 5px 0;
+    }
+  }
+  &__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    // max-width: 100%;
+
+    color: #737373;
+    // white-space: nowrap;
+    // text-overflow: ellipsis;
+  }
+}
+
+// clients ----------------------------
+
+.clients {
+  padding: 50px 0;
+
+  @media (max-size: 992px) {
+    padding: 30px 0;
+  }
+  &__container {
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  &__item {
+    flex: 0 1 16.667%;
+    padding: 8px 15px;
+    min-width: 140px;
+
+    text-align: center;
+
+    & img {
+      max-width: 100%;
+    }
   }
 }
