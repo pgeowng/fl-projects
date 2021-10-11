@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+.page__nav {
+  min-height: 58px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__list {
+  margin: 0 0 -20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav__item {
+  margin: 0 0 10px 0;
+  padding: 0 24px;
+}
+
+.nav__link {
+  padding: 5px;
+  font-size: 15px;
+  color: #3c3c3c;
+}
+
+.nav__link--focus, .nav__link:focus {
+  font-weight: 700;
+  color: #ada074;
+}
+
+.title {
+  font-size: 34px;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.title::after {
+  margin: 0.941em auto 0;
+  display: block;
+  height: 1px;
+  width: 2.72em;
+  background: #000;
+  content: '';
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 28px;
+  }
+}
+
+.text {
+  line-height: 185%;
+  color: #868585;
+  text-align: center;
+}
